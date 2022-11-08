@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="images/logo.svg" alt="logo" />
+      <div class="container">
+        <div class="billCalc">
+          <div class="bill">
+            <h1>Bill</h1>
+            <h2 class="errormsg">Can't be zero</h2>
+            <img
+              class="sign dollar"
+              src="images/icon-dollar.svg"
+              alt="dollar sign"
+            />
+            <input
+              id="Billvalue"
+              autocomplete="off"
+              step=".01"
+              type="number"
+              name="numbers"
+            />
+          </div>
+          <div class="selectbox">
+            <h2>Select Tip %</h2>
+            <div class="buttonBox">
+              <button class="tip five">5%</button>
+              <button class="tip ten">10%</button>
+              <button class="tip fiteen">15%</button>
+              <button class="tip twentyfive">25%</button>
+              <button class="tip fifty">50%</button>
+              <input
+                class="custom"
+                placeholder="Custom"
+                id="customize"
+                autocomplete="off"
+                type="number"
+              />
+            </div>
+          </div>
+          <div class="Numbpeop">
+            <h2>Number of People</h2>
+            <h2 class="errormsg">Can't be zero</h2>
+            <img
+              class="sign people"
+              src="images/icon-person.svg"
+              alt="Person icon"
+            />
+            <input
+              id="everyBody"
+              autocomplete="off"
+              type="number"
+              name="number"
+            />
+          </div>
+        </div>
+        <div class="totalAmount">
+          <div class="tipAount">
+            <div class="Text">
+              <h2>Tip Amount</h2>
+              <p>/ person</p>
+            </div>
+            <div class="Amount">$<span class="tiptotal">0.00</span></div>
+          </div>
+          <div class="tipAount">
+            <div class="Text">
+              <h2>Total</h2>
+              <p>/ person</p>
+            </div>
+            <div class="TotalAmount">$<span class="FullTotal">0.00</span></div>
+          </div>
+          <button class="reset" type="reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Osauyi</a>.
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
